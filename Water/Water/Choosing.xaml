@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Water.Choosing">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="header" Text="Drinks" FontSize="Large" />
+            <Picker x:Name="picker_x" SelectedIndexChanged="Choose" Title="Выберите напиток" 
+                    TitleColor="DeepPink" TextColor="DeepPink">
+                <Picker.Items>
+                    <x:String>Water</x:String>
+                    <x:String>Juice</x:String>
+                    <x:String>Wine</x:String>
+                    <x:String>Something stronger</x:String>
+                </Picker.Items>
+            </Picker>
+            <Image x:Name="image" Source="Hello.png"></Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
